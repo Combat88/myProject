@@ -1,0 +1,141 @@
+/*------------------全局样式-----------------*/
+@charset "utf-8";
+/*取消默认的margin和padding*/
+body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+/*设置页面字体rem为单位*/
+html {
+    font-size: 62.5%;
+}
+
+@media only screen and (min-width: 481px) {
+    html {
+        font-size: 94% !important
+    }
+}
+
+@media only screen and (min-width: 561px) {
+    html {
+        font-size: 109% !important
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    html {
+        font-size: 125% !important
+    }
+}
+
+body {
+    background: #f7f7f0;
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #999999;
+    font-size: 1.4rem;
+    color: #888;
+}
+
+/* links */
+a {
+    color: #666666;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*图片自适应*/
+img {
+    height: auto;
+    width: auto \9;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+a img {
+    border: 0;
+}
+
+/*清除浮动*/
+.clear {
+    clear: both;
+    float: none;
+    overflow: hidden;
+    height: 0;
+}
+
+.clearFix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* for IE6/7 */
+.clearFix {
+    *zoom: 1;
+}
+
+/*解决屏幕点击元素出现底色*/
+a, button, input, div {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+/*-----------------------content-------------------------------*/
+.wrapper {
+    width: 640px;
+    margin: 0 auto;
+}
+
+
+/*列表切换*/
+.maple-tab {
+    background-color: #fff;
+    width: 100%;
+}
+.maple-tab ul {
+    width: 100%;
+    overflow: hidden;
+}
+
+.maple-tab ul li {
+    list-style-type: none;
+    float: left;
+    width: 50%;
+    text-align: center;
+    color: #333;
+    font-size: 1.6rem;
+    padding: 4% 0;
+    border-bottom: 2px solid #dedede;
+    cursor: pointer;
+}
+
+/*tab活动状态样式*/
+.maple-tab .active {
+    color: #f76755;
+    border-bottom: 2px solid #f76755;
+}
+
+
+.tab-content-1,.tab-content-2{
+    width: 100%;
+    height: 10rem;
+    padding: 4% 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.tab-content-1{
+    color: #f76755;
+}
+.tab-content-2{
+    color: mediumslateblue;
+}
+
